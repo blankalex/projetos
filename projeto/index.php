@@ -97,13 +97,13 @@ $linhas_pegar_jogo = pg_num_rows($resultado_pegar_jogo);
             <section id="slider">
 
                 <figure class="slide active" style="background-image: url('img/slider/slide4.jpg');">
-                    <figcaption><h2>Cansado de jogar com trolls?</h2></figcaption>
+                    <figcaption><h2>Cansado de jogar com trolls? teste</h2></figcaption>
                 </figure>
                 <figure class="slide" style="background-image: url('img/slider/slide2.jpg');">
-                    <figcaption><h2>Cansado de jogar com noobs?</h2></figcaption>
+                    <figcaption><h2>Cansado de jogar com noobs? teste</h2></figcaption>
                 </figure>
                 <figure class="slide" style="background-image: url('img/slider/slide1.jpg');">
-                    <figcaption><h2>Cansado de jogar com os hermanos?</h2></figcaption>
+                    <figcaption><h2>Cansado de jogar com os hermanos? teste</h2></figcaption>
                 </figure>
             </section>
             <!--FIM SLIDER-->
