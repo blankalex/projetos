@@ -1,0 +1,1326 @@
+@font-face{
+    font-family: 'Revalia';
+    src: url('../fonts/Revalia-Regular.ttf'); 
+}
+
+body {
+    font-size: 62.5%;
+
+}
+
+html{
+    background: white;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+}
+
+.espaço{
+
+    visibility: hidden;
+}
+.empurra{
+    padding-top: 65px;
+}
+
+/*div centro*/
+.centro{
+    width: 80%;
+    display: table;
+    margin: 0 auto;
+ }
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/***************************************************************JOGO*******************************************/
+
+.fonte_jogos{
+    font-family: 'Revalia';
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+.fonte_jogos_borda{
+    border-top: solid #222;
+    border-bottom: solid #222;
+    background: #222;
+    opacity: 0.7;
+    padding: 5px 0 10px 0;
+    margin-top: 20px;
+    margin-bottom: -20px; 
+    
+}
+
+.jogo :hover{
+     box-shadow: 1px 2px 20px 2px #faa61a;
+}
+
+.jogo_1{
+    box-sizing: border-box;
+    padding: 0 1%;
+    margin-top: 1.6%;
+    height: 300px;
+    background-image: url(../img/jogo/cs_go.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    opacity: 0.7;
+    border-radius: 1%;
+    background-position: center;
+}
+
+/*****************************************************************USER******************************************/
+.fonte_player{
+    font-family: 'Revalia';
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+.fonte_player_borda{
+    border-top: solid #222;
+    border-bottom: solid #222;
+    background: #222;
+    opacity: 0.7;
+    padding: 5px 0 10px 0;
+    margin-top: 20px;
+    width: 125.5%;
+    margin-left: -13%;
+    margin-top: 20px;
+    margin-bottom: 65px;
+    
+    
+}
+
+.usuarios{
+    margin-top: 1.6%;
+}
+
+#player .forcoluna-3{
+    box-sizing: border-box;
+    padding: 0 1%;
+}
+
+.jogadores{
+    width: 100%;
+    position: relative;
+    height: 350px;
+    margin-bottom: 5%;
+    background: rgba(0,0,0, 0.5);
+    position: relative;
+    box-shadow: 1px 1px 2px #faa61a;
+    border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px 6px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    font-family: 'Revalia';
+    color: white;
+    font-size: 1.4em; 
+    text-align: center;  
+}
+
+.imguser{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 7%;    
+    margin-bottom: 5%;
+    border: solid 2px #faa61a;
+}
+
+.imgsteam{
+    width: 20%; 
+}
+
+.imgpatente{
+    opacity: 0.7;
+    height: 6%;
+    margin-bottom: 2%;
+    position: absolute;
+    left: 0;
+    top: 0;   
+}
+
+.img_funcao_user{
+    width: auto;
+    height: 25px;    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+
+.div_img_funcao{
+   text-align: center;    
+}
+
+.jogadores h2, h3{
+    text-align: center;
+    display: inline;  
+}
+
+.jogadores h2:not(:first-of-type):before{
+    content: '/';
+    display: inline;
+    font-size: 1.2em;
+    color: white;
+}
+
+.ver_mais_player{
+    text-align: center;
+    margin-bottom: 1.6%;
+}
+
+.botao_ver_mais{
+    font-family: 'Revalia';
+    font-size: 1.4em;
+    color: white;
+    width: 110px;
+    border: 1px solid #faa61a;
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    
+}
+
+.botao_ver_mais:hover{
+   color: black;
+   background-color: #faa61a;
+}
+/*****************************************************************Usuários cadastrados*********************************/
+.usuario_cadastrado_geral{
+    border: 1px solid #faa61a;
+    background: white;
+    font-family: 'Revalia';
+    color: white;
+    font-size: 1.2em; 
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+.usuario_cadastrado_solo{
+    border: 1px solid #faa61a;
+    background: #2c2c32;
+    
+    
+}
+
+
+.usuario_cadastrado_solo_center{
+    text-align: center;
+    
+}
+
+.topico{
+    border: 1px solid blue;
+    background: red;
+  
+}
+
+/************************************************************************Menu******************************************/
+#menu{
+
+    z-index: 98;
+    background-color: #222;
+    opacity: 0.9;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid #faa61a;
+}
+#menu figure h1{
+    display: inline;
+    float: left;
+    font-family: 'Revalia';
+    color: white; 
+    margin-top: 7%;
+    margin-left: 1%;
+    font-size: 1.6em;
+}
+
+#menu figure #logo{
+    width: 20%;
+    float: left;
+    margin-top: 1%;
+}
+
+.navegacao{
+    float: right;
+    margin-top: 1.4%;
+    color: white;
+    font-family: 'Revalia';
+    font-size: 1.4em;
+}
+
+nav#menu  {
+    display: block;
+}
+
+
+nav#menu ul {
+    list-style: none;  
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0px; 
+    border-radius: 2px;
+    transition: background-color 1s; 
+    -webkit-transition: background-color 1s; 
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #faa61a;
+}
+
+nav#menu a{
+    color: white;
+    text-decoration: none;	
+}
+
+nav#menu a:hover{
+    color: black;
+}
+
+nav#menu li ul {  /*UL SUBMENU */
+    position:absolute; 
+    top:40px; 
+    left:auto;
+    display:none;
+    margin-left: -11px;
+}
+nav#menu li:hover ul, nav#menu li.over ul{
+    display:block;
+}
+
+nav#menu li ul li{
+    background-color: #222;
+    border-radius: 3%;
+    display:block;  
+}
+
+nav#menu li ul li:hover {
+    background-color: #faa61a;
+}
+
+@keyframes pisca{
+  from { background: #47ea47;
+  box-shadow: inset 0 -6px 12px #238223;  }
+  
+  to {background: #d9534f;
+  box-shadow: inset 0 -6px 12px #98201c; 
+  }
+}
+
+.player-status{
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  margin-right: 295px;
+  animation: pisca 1s alternate infinite;
+  border-radius: 50%;
+  transform: translateX(1rem) translateY(-1rem);
+  
+}
+
+
+.player-status-nao{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: #A9A9A9;
+  box-shadow: inset 0 -6px 12px #A9A9A9;
+  margin-right: 280px;
+  border-radius: 50%;
+ 
+}
+
+/***********************************************************SLIDER*******************************************************/
+
+#slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 65px;
+    background: #222;
+    border-bottom: 2px solid rgb(250, 166, 26);
+}
+
+.slide > figcaption h2{
+    font-family: 'Revalia', sans-serif;
+    font-size: 2.6em;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1000ms ease all;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.slide.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+/**********************************************************Form de contato/duvida***************************************/
+.contato{
+    /*border-top: 1px solid #faa61a;*/
+    
+    border-radius: 2px;
+    max-width: 20%;
+    margin-left: 40%;
+    margin-top: 2%;
+    background-color: #2c2c32;
+    padding: 2%;
+    box-shadow: 5px 5px 16px #faa61a;   
+}
+
+.contato h2{
+    font-family: 'Revalia';
+    font-size: 5em;
+    color: white;
+    font-variant: small-caps;
+}
+
+.texto_contato{ 
+    font-family: 'Revalia';
+    font-size: 1.2em;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    border: 1px solid #faa61a;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin-bottom: 2%;
+    padding: 1%;
+    width: 100%;
+}
+
+.botaocontato{
+    font-family: 'Revalia';
+    font-size: 1.8em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 30%;
+    width: 40%;
+    height: 40px;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.botaocontato:hover{
+    background: #faa61a;
+}
+
+.texto_contato ::placeholder {
+    color: white;
+}
+/*************************************************Form de contato/duvida MODAL***************************************/
+.modalduvidas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99;
+    opacity:0;
+    visibility: hidden;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    
+
+}
+
+.modalduvidas:target {
+    opacity:1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modalduvidas > div {
+
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+}
+
+.fecharmodalduvidas {
+    position: absolute;
+    width: 2%;
+    right: 0.7%;
+    top: 3.4%;
+    text-align: center;
+    line-height: 120%;
+    margin-top: 8.7%;
+    margin-right: 38%;
+    /*background: #2c2c32;*/
+    border-radius: 0%;
+    /*box-shadow: 2px 2px 6px black;*/
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Revalia';
+    z-index: 1;
+}
+
+
+
+/***************************************************Form de login****************************************************/
+
+.login{
+    /*border-top: 1px solid #faa61a;*/
+    
+    border-radius: 2px;
+    max-width: 20%;
+    margin-left: 40%;
+    margin-top: 2%;
+    background-color: #2c2c32;
+    padding: 2%; 
+    box-shadow: 5px 5px 16px #faa61a;
+}
+
+.nao_cadastrado_fonte{
+    font-family: 'Revalia';
+    font-size: 1.2em;
+    color: white;
+}
+
+.nao_cadastrado_fonte a{
+    font-family: 'Revalia';
+    font-size: 1.2em;
+    color: white; 
+}
+
+.nao_cadastrado_fonte:hover{
+   color: #faa61a;
+  
+}
+
+
+.login h2{
+    font-family: 'Revalia';
+    font-size: 5em;
+    color: white;
+    font-variant: small-caps;
+}
+
+.texto_login{
+    font-family: 'Revalia';
+    font-size: 1.2em;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    border: 1px solid #faa61a;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin-bottom: 2%;
+    padding: 1%;
+    width: 97%;
+}
+
+.botaologin{
+    font-family: 'Revalia';
+    font-size: 1.8em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 30%;
+    width: 40%;
+    height: 40px;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.botaologin:hover{
+    background: #faa61a;
+}
+
+.texto_login ::placeholder {
+    color: white;
+}
+
+/******************************************************Form de Login MODAL************************************/
+
+.modallogin {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99;
+    opacity:0;
+    visibility: hidden;
+    -webkit-transition: opacity 4000ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modallogin:target {
+    opacity:1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modallogin > div {
+
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+}
+
+.fecharmodallogin{
+    position: absolute;
+    width: 2%;
+    right: 0.7%;
+    top: 2.7%;
+    text-align: center;
+    line-height: 120%;
+    margin-top: 9%;
+    margin-right: 38%;
+    /*background: #2c2c32;*/
+    border-radius: 0%;
+    /*box-shadow: 2px 2px 6px black;*/
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+
+}
+
+
+/*****************************************************************Formulário de cadastro****************************/
+/*
+.erros, .ok{
+    width: 78%;
+    padding: 2%;
+    background: yellow;
+    margin: 2% auto 0 auto;
+    border: 1px solid yellowgreen;
+    border-radius: 4px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.ok{
+    background: orange;
+}
+*/
+
+.sair_cadastro{
+    float: right;
+    margin-top: -7%;
+}
+
+.sair_cadastro :hover{
+    background-color: #faa61a;
+}
+
+#formulario{
+    width: 100%;
+    margin: 3% auto;
+    text-align: center;
+    position: relative;
+}
+
+#formulario h2, #formulario h3{
+    font-family: 'Revalia';
+    font-size: 2.5em;
+    color: white;
+    width: 100%;
+    float: left;
+    text-align: left;
+    position: relative;
+    margin-bottom: 4%;
+}
+#formulario h3{
+    font-family: 'Revalia';
+    font-size: 1.8em;
+    color: white;
+    margin-top: 3%;
+}
+
+#formulario .fonte_logar_cadastro{
+    font-size: 1.2em;
+}
+
+#formulario .texto_foto_perfil{
+    margin: 0;
+    padding: 0;
+}
+
+.url_steam{
+    font-family: 'Revalia';
+    font-size: 1.2em;
+    text-align: left;
+    color: gray;
+    padding-bottom: 5px;
+}
+
+.descricao_treino{
+    font-family: 'Revalia';
+    font-size: 1.2em;
+    text-align: left;
+    color: darkgray;
+    float: left;
+    margin-top: 1%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+
+.escolher_foto{
+    margin-top: 4%;
+}
+
+#formulario fieldset{
+    background: #2c2c32;
+    border: 0 none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 2% 3%;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;    
+    box-shadow: 5px 5px 16px #faa61a;
+}
+
+.opcoes_cadastro{
+    padding: 1%;
+    border: 1px solid #faa61a;
+    border-radius: 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.2em;
+    color:white;
+    font-family: 'Revalia'; 
+    margin-bottom: 2%;
+    background-color: rgba(0,0,0, 0.5);
+}
+.estilo_input{
+    padding: 1%;
+    border: 1px solid #faa61a;
+    border-radius: 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.2em;
+    color:white;
+    font-family: 'Revalia'; 
+    margin-bottom: 2%;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+#formulario textArea{
+    padding: 1%;
+    border: 1px solid #faa61a;
+    border-radius: 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.2em;
+    color:white;
+    font-family: 'Revalia'; 
+    margin-bottom: 2%;
+    background-color: rgba(0,0,0, 0.5);
+
+
+}
+
+ input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    float: left;
+    
+}
+
+.img_funcao{
+    width: auto;
+    height: 25px;
+    margin-right: 5px;
+    float: left;
+}
+
+
+
+#formulario .acaonext{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 20%;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+}
+
+#formulario .acaonext:hover{
+    background: #faa61a;
+}
+
+#formulario .acaonext1{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    margin-left: 17%;
+
+}
+
+#formulario .acaonext1:hover{
+    background: #faa61a;
+}
+
+#formulario .acaoprev{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 0;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+
+
+}
+
+#formulario .botao_logar_cadastro{
+        padding: 3px 6px;
+}
+
+#formulario .acaoprev:hover{
+    background: #faa61a;
+}
+
+#formulario .acaoenviar{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 20%;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left; 
+}
+
+#formulario .acaoenviar:hover{
+    background: #faa61a;
+}
+
+#formulario fieldset:not(:first-of-type){
+    display: none;  
+}
+
+#formulario #progress{
+    margin-bottom: 5%;
+    overflow: hidden;
+    counter-reset: step; 
+}
+
+#formulario #progress li{
+    list-style-type: none;
+    color: white;
+    font-family: 'Revalia';
+    text-transform: uppercase;
+    font-size: 1.2em;
+    float: left;
+    width: 33.33%;
+    position: relative;
+    left: -2%;
+}
+
+#formulario #progress li:before{
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    display: block;
+    line-height: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 0 auto 10px auto;
+
+}
+
+#formulario #progress li:after{
+    content: '';
+    width: 100%;
+    background: white;
+    height: 2px;
+    position: absolute;
+    top: 18%;
+    left: -50%;
+    z-index: -1;
+
+}
+
+#formulario #progress li:first-child:after{
+    content: none;
+}
+
+#formulario #progress li.ativo:before, #formulario #progress li.ativo:after{
+    background: #faa61a;
+    color: white;
+    text-shadow: 0 1px 0;
+
+}
+
+/**************************************************Fim do Formulário de cadastro***********************************/
+/*********************************************************Cadastro MODAL********************************************/
+.modalcadastro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99;
+    opacity:0;
+    visibility: hidden;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+
+}
+
+.modalcadastro:target {
+    opacity:1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modalcadastro > div {
+
+    position: relative;
+    margin: 3% auto;
+    padding: 15px 20px;
+}
+
+.fecharmodalcadastro {
+    position: absolute;
+    width: 2%;
+    right: 0.7%;
+    top: 2%;
+    text-align: center;
+    line-height: 120%;
+    margin-top: 9.3%;
+    margin-right: 31%;
+    /*background: #2c2c32;*/
+    border-radius: 0%;
+    /*box-shadow: 2px 2px 6px black;*/
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Revalia';
+    z-index: 1;
+}
+/***********************************************************EDITAR USER**********************************/
+.h2_cliente{
+    color: red;
+    text-align: center;
+    font-family: 'Revalia';
+    font-size: 2em;
+    margin-top: 3%;
+}
+
+
+/**********************************************Rodapé***********************************************************/
+footer{
+    border-top: 2px solid #faa61a; 
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.footer{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contato_rodape1{
+    font-family: 'Revalia';
+    font-size: 1.6em;
+    color: white;
+    display: inline;
+    margin-left: 15%;
+}
+
+.contato_rodape2{
+    font-family: 'Revalia';
+    font-size: 1.6em;
+    color: white;
+    display: inline;
+    margin-left: -9%;
+}
+
+.contato_rodape_centro{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.footer ul li{
+    
+    margin-left: 10%;
+    display: inline;
+
+}
+
+.footer ul li a{
+    text-decoration: none;
+}
+
+.tamanhoicone{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    box-shadow: 1px 1px 2px #faa61a;
+}
+
+
+.copyrightborda{
+    font-family: 'Revalia';
+    margin: 20px 0 0 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #faa61a;
+    font-size: 1.4em;
+    
+}
+
+/***********************************************Cadastrar jogo***************************************************/
+.cadastrar_editar_jogo{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #2c2c32;
+    box-shadow: 5px 5px 16px #faa61a;
+}
+
+.cadastrar_editar_jogo h2{
+    font-family: 'Revalia';
+    font-size: 1.2em;
+    color: white;
+    display: inline;
+    margin-right: 5px;
+}
+
+.cadastrar_editar_jogo h7{
+    font-family: 'Revalia';
+    font-size: 1.4em;
+    color: #faa61a;
+    display: inline;
+    
+}
+
+.barra_opcoes{
+  background-color: #222;
+
+}
+
+.cadastroJogo{
+  margin: 1.6%;
+  margin-bottom: 0;
+  border-top: solid 1px orange;
+}
+
+.itens_cadastro{
+    padding: 3.2% 0;
+}
+
+.itens_editar{
+   padding: 1.6% 0;
+}
+
+#formulario_jogo .acaoenviar{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 20%;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+}
+
+#formulario_jogo .acaoenviar:hover{
+    background: #faa61a;
+}
+
+#formulario_jogo .acaocancelar{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 0;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+}
+
+#formulario_jogo .acaocancelar:hover{
+    background: #faa61a;
+}
+
+.jogo_cadastrado_solo{
+    border-bottom: solid 1px #faa61a;
+    margin-bottom: 1.6%;
+    padding-bottom: 1.6%;
+}
+
+/**************************************************Cadastro Equipe***************************************************/
+
+.cadastro_equipe{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #2c2c32;
+    box-shadow: 5px 5px 16px #faa61a;
+    padding: 15px;
+}
+
+.texto_fanpage{
+    font-family: 'Revalia';
+    font-size: 1.0em;
+    color: white;
+}
+
+.texto_foto_equipe{
+    font-family: 'Revalia';
+    font-size: 1.4em;
+    color: white;
+}
+
+#formulario_equipe .acaoenviar{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 20%;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+}
+
+#formulario_equipe .acaoenviar:hover{
+    background: #faa61a;
+}
+
+#formulario_equipe .acaocancelar{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 0;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+}
+
+#formulario_equipe .acaocancelar:hover{
+    background: #faa61a;
+}
+
+/*******************************************************DADOS EQUIPE**********************************************/
+.nome_time{
+    margin-top: 1.6%;
+    padding-bottom: 1.6%;
+    border-bottom: solid 1px #faa61a;
+}
+
+.membros_equipe{
+    margin-top: 1.6%;
+    padding-bottom: 1.6%;
+    border-bottom: solid 1px #faa61a;
+}
+
+.todos_usuarios{
+    margin-top: 1.6%;
+    padding-bottom: 1.6%;
+    border-bottom: solid 1px #faa61a;
+}
+
+.nome_time h2{
+    font-family: 'Revalia';
+    font-size: 1.4em;
+    color: white;
+}
+.membros_equipe h2{
+    font-family: 'Revalia';
+    font-size: 1.4em;
+    color: white;
+}
+
+.todos_usuarios h2{
+    font-family: 'Revalia';
+    font-size: 1.4em;
+    color: white;
+}
+
+#formulario_convite .acaoprev{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 0;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+}
+
+#formulario_convite .acaoprev:hover{
+    background: #faa61a;
+}
+
+#formulario_convite .acaoenviar{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 20%;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left; 
+}
+
+#formulario_convite .acaoenviar:hover{
+    background: #faa61a;
+}
+
+.checkbox_nome{
+    padding-top: 5px;
+}
+/***********************************************Cadastrar jogo***************************************************/
+.cadastroTime{
+  margin: 1.6%;
+  margin-bottom: 0;
+  border-top: solid 1px orange;
+}
+
+.cadastrar_editar_jogo{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #2c2c32;
+    box-shadow: 5px 5px 16px #faa61a;
+}
+
+/***************************************************NOTIFICAÇÕES*****************************************************/
+
+.cadastroNotificacao{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: #2c2c32;
+    border-top: solid 1px #faa61a;
+    
+}
+
+.convites{
+   padding: 15px 15px 45px 15px;
+   border-bottom: solid 1px #faa61a;
+}
+
+#formulario_convite_cancelar_aceitar .acaoprev{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 0;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+}
+
+#formulario_convite_cancelar_aceitar .acaoprev:hover{
+    background: #faa61a;
+}
+
+#formulario_convite_cancelar_aceitar .acaoenviar{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 20%;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left; 
+}
+
+#formulario_convite_cancelar_aceitar .acaoenviar:hover{
+    background: #faa61a;
+}

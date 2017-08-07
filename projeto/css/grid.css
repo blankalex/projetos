@@ -1,0 +1,187 @@
+.conteudo {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+	position: relative;
+        
+}
+/*Redefinindo o Box Model*/
+.linha,
+.coluna {
+    box-sizing: border-box;
+}
+
+.linha,
+.forcoluna {
+    box-sizing: border-box;
+}
+
+/*Limpando Floats*/
+.linha:before,
+.linha:after {
+    content: " ";
+    display: table;
+}
+.linha:after {
+    clear: both;
+}
+
+/*Definindo Colunas*/
+.coluna {
+    position: relative;
+    float: left;
+}
+
+.forcoluna {
+    position: relative;
+    float: left;
+}
+/*separação entre as colunas*/
+/*
+mr = mp / mc
+
+mr = margem em porcentagem
+mp = margem em pixel
+mc = máximo de colunas
+*/
+.coluna + .coluna {
+    margin-left: 1.6%;
+}
+
+.forcoluna + .forcoluna{
+    margin-left: 0%;
+}
+
+/*Calculando Largura das Colunas*/
+/*
+scw = (100 – (m * (mc – 1))) / mc
+
+scw = largura da coluna única
+m = margin (1.6%)
+mc = máximo de colunas (12)
+
+scw= única coluna de largura 6.86666666667%
+
+scw= única coluna de largura para o for é 8.33333333333
+
+****calcular as larguras das colunas restantes
+
+cw = (scw * cs) + (m * (cs – 1))
+
+cw = largura da coluna
+scw = largura da coluna única (6.86666666667%)
+cs = coluna span (1-12)
+m = margin (1.6%)
+*/
+/* grid padrão*/
+.coluna-1 {
+    width: 6.86666666667%;
+} 
+.coluna-2 {
+    width: 15.3333333333%;
+}
+.coluna-3 {
+    width: 23.8%;
+} 
+.coluna-4 {
+    width: 32.2666666667%;
+} 
+.coluna-5 {
+    width: 40.7333333333%;
+} 
+.coluna-6 {
+    width: 49.2%;
+} 
+.coluna-7 {
+    width: 57.6666666667%;
+} 
+.coluna-8 {
+    width: 66.1333333333%;
+} 
+.coluna-9 {
+    width: 74.6%;
+} 
+.coluna-10 {
+    width: 83.0666666667%;
+} 
+.coluna-11 {
+    width: 91.5333333333%;
+} 
+.coluna-12 {
+    width: 100%;
+}
+
+/*grid para for*/
+
+.forcoluna-1 {
+    width: 8.33333333333%;
+} 
+.forcoluna-2 {
+    width: 16.6666666667%;
+}
+.forcoluna-3 {
+    width: 25%;
+} 
+.forcoluna-4 {
+    width: 33.3333333333%;
+} 
+.forcoluna-5 {
+    width: 41.6666666667%;
+} 
+.forcoluna-6 {
+    width: 50%;
+} 
+.forcoluna-7 {
+    width: 58.3333333333%;
+} 
+.forcoluna-8 {
+    width: 66.6666666666%;
+} 
+.forcoluna-9 {
+    width: 75%;
+} 
+.forcoluna-10 {
+    width: 83.3333333333%;
+} 
+.forcoluna-11 {
+    width: 91.6666666666%;
+} 
+.forcoluna-12 {
+    width: 100%;
+}
+
+/*Otimizando para Dispositivos Móveis*/
+
+@media only screen and (max-width: 650px) {
+    
+    .coluna-1, 
+    .coluna-2, 
+    .coluna-3, 
+    .coluna-4, 
+    .coluna-5, 
+    .coluna-6, 
+    .coluna-7, 
+    .coluna-8, 
+    .coluna-9, 
+    .coluna-10, 
+    .coluna-11, 
+    .coluna-12 {
+        float: none;
+        width: auto;
+
+    }
+
+    .coluna + .coluna {
+        margin-left: 0;
+    }
+    html {background-color: black;}
+    .linha {
+        margin-bottom: 0;
+    }
+    .coluna {
+        margin-bottom: 10px;
+    }
+    .linha:last-child .coluna:last-child {
+        margin-bottom: 0;
+    }
+}

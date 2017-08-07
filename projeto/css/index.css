@@ -1,0 +1,207 @@
+@font-face{
+    font-family: 'Revalia';
+    src: url('../fonts/Revalia-Regular.ttf'); 
+}
+
+html{
+   
+    background: #696969;
+    
+}
+
+#formulario{
+    width: 50%;
+    margin: 3% auto;
+    text-align: center;
+    position: relative;
+    
+   
+}
+
+#formulario h2, #formulario h3{
+    font-family: 'Revalia';
+    font-size: 2em;
+    color: white;
+    width: 100%;
+    float: left;
+    text-align: left;
+    position: relative;
+    margin-bottom: 4%;
+}
+#formulario h3{
+     font-family: 'Revalia';
+    font-size: 1.4em;
+    color: white;
+}
+
+
+#formulario fieldset{
+    background: #696968;
+    border: 0 none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 15px 1px rgba(0,0,0, 0.4);
+    padding: 2% 3%;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    
+}
+
+#formulario input, #formulario textArea{
+    padding: 1%;
+    border: 1px solid #faa61a;
+    border-radius: 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1em;
+    color:white;
+    font-family: 'Revalia'; 
+    margin-bottom: 2%;
+    background-color: rgba(0,0,0, 0.5);
+   
+    
+}
+
+#formulario .acaonext{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 20%;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+    
+  
+}
+
+#formulario .acaonext:hover{
+    background: #faa61a;
+}
+
+#formulario .acaonext1{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 60%;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+    
+  
+}
+
+#formulario .acaonext1:hover{
+    background: #faa61a;
+}
+
+#formulario .acaoprev{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 0;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+   
+  
+}
+
+#formulario .acaoprev:hover{
+    background: #faa61a;
+}
+
+#formulario .acaoenviar{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 20%;
+    width: 40%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    float: left;
+    
+  
+}
+
+#formulario .acaoenviar:hover{
+    background: #faa61a;
+
+}
+
+#formulario fieldset:not(:first-of-type){
+    display: none;
+    
+}
+
+#formulario #progress{
+    margin-bottom: 5%;
+    overflow: hidden;
+    counter-reset: step;
+    
+}
+
+#formulario #progress li{
+    list-style-type: none;
+    color: white;
+    font-family: 'Revalia';
+    text-transform: uppercase;
+    font-size: 1em;
+    float: left;
+    width: 33.33%;
+    position: relative;
+}
+
+#formulario #progress li:before{
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    display: block;
+    line-height: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 0 auto 10px auto;
+   
+}
+
+#formulario #progress li:after{
+    content: '';
+    width: 100%;
+    background: white;
+    height: 2px;
+    position: absolute;
+    top: 18%;
+    left: -50%;
+    z-index: -1;
+    
+}
+
+#formulario #progress li:first-child:after{
+    content: none;
+}
+
+#formulario #progress li.ativo:before, #formulario #progress li.ativo:after{
+    background: #faa61a;
+    color: white;
+    text-shadow: 0 1px 0;
+      
+}

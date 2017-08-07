@@ -1,0 +1,57 @@
+@font-face{
+    /*font-family: 'JosefinSans-Regular';
+    src: url('../fonts/JosefinSans-Regular.ttf');*/
+    font-family: 'Revalia';
+    src: url('../fonts/Revalia-Regular.ttf'); 
+}
+
+html{
+    /*background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    background-color: #2c2c32;
+}
+.contato{
+    /*border-top: 1px solid #faa61a;*/
+    box-shadow: 2px 2px 6px black;
+    border-radius: 2px;
+    max-width: 20%;
+    margin-left: 40%;
+    margin-top: 2%;
+    background-color: #2c2c32;
+    padding: 2%;    
+}
+
+.contato h2{
+    font-family: 'Revalia';
+    font-size: 5em;
+    color: white;
+    font-variant: small-caps;
+}
+
+.texto_contato{
+    font-family: 'Revalia';
+    font-size: 2em;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    border: 1px solid #faa61a;
+    border-radius: 2px;
+}
+
+.botao{
+    font-family: 'Revalia';
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    margin-left: 30%;
+    width: 40%;
+    height: 40px;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+::placeholder {
+   color: white;
+}
